@@ -1,6 +1,17 @@
 {
-  "name": "sinister_app",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+    "name": "sinister_app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "cd client/mern_azure_example && yarn && yarn run build && cd ../.. && node server",
+        "dev": "node server"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.11.19"
+    }
 }
